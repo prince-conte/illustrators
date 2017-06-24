@@ -2,7 +2,7 @@
     background: #fff;
 
     &__box {
-        padding: 3rem 0;
+        padding: 6rem 0;
 
         @include mq(md) {
             padding: 11rem 0 12rem;
@@ -10,17 +10,110 @@
     }
 
     &__grid {
+        display: flex;
+        flex-direction: column;
+
+
         @include mq(md) {
-            @include grid(x, center, center);
+            @include grid(x, center, stretch);
+            flex-direction: row;
         }
     }
 
     &__item {
+        padding: 1rem;
+        &:not(:first-child) {
+            margin-top: 2rem;
+        }
+
         @include mq(md) {
             @include grid-col;
             @include col-size(1/2);
         }
     }
+
+    &__content {
+
+    @include mq(xs) {
+        text-align: center;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+        @include mq(md) {
+
+            &:not(:last-child) {
+                margin-bottom: 4rem;
+            }
+        }
+
+    }
+
+    &__link {
+        @include font(2rem,2.8rem);
+        @include interact(color,$color-brand);
+        color: $color-title;
+
+        @include mq(md) {
+            @include font(3.4rem,5rem);
+        }
+    }
+
+    &__link-title {
+        @include h5();
+        margin-bottom: 1.5rem;
+
+        @include mq(md) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__social-grid {
+        display: flex;
+
+        @include mq(xs) {
+            justify-content: center;
+        }
+
+        > a {
+            @include size(5rem);
+            @include interact(transform, translateY(-.5rem));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: #000;
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            > i {
+                @include font(3rem);
+                display: block;
+                color: #fff;
+            }
+        }
+
+        > .instagram {
+            background: #d6249f;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+        }
+
+        > .facebook {
+            background: #3b5997;
+        }
+
+        > .vk {
+          background: #4885c5;
+        }
+
+    }
+
+
+
 
 
 }

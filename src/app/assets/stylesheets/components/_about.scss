@@ -55,14 +55,12 @@
 
         > p {
 
-            @include mq(md) {
-                @include text-base;
-                color: $color-base;
-                margin-bottom: 1.5rem;
+            @include text-base;
+            color: $color-base;
+            margin-bottom: 1.5rem;
 
-                &:not(:last-child) {
-                    margin-bottom: 2.5rem;
-                }
+            &:not(:last-child) {
+                margin-bottom: 2.5rem;
             }
         }
 

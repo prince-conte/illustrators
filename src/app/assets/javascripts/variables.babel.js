@@ -2,8 +2,8 @@
 // Integer: mq.sm.int
 // String:  Modernizr.mq(mq.sm.str);
 createMq([
-    ['sm', 767],
-    ['lg', 768]
+    ['xs', 767],
+    ['md', 768]
 ]);
 
 // TODO: add doubleHover

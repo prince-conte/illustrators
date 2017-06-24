@@ -2,7 +2,7 @@
     background: $color-inverse;
 
     &__box {
-        padding: 3rem 0;
+        padding: 6rem 0;
 
         @include mq(md) {
             padding: 11rem 0 12rem;
@@ -10,29 +10,40 @@
     }
 
     &__grid {
-        display: flex;
-        justify-content: space-around;
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-around;
+        }
+
 
     }
 
     &__item {
-        flex: 2;
-        flex-grow: 1;
         padding: 1rem;
         text-align: center;
 
+        @include mq(xs) {
+
+            &:not(:first-child) {
+                margin-top: 1.5rem;
+            }
+        }
+
         @include mq(md) {
+            flex: 1;
+            flex-grow: 1;
             padding: 2rem;
         }
     }
 
     &__item-value {
+        @include font(7rem,7rem);
         margin-bottom: .8rem;
         text-transform: uppercase;
         color: $color-brand;
 
         @include mq(md) {
-            @include font(7rem,7rem);
         }
     }
 

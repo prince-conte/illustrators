@@ -19,19 +19,56 @@
             width: 100%;
             padding: 1.7rem 1.7rem 1.6rem;
             border: 1px solid #e6e6e6;
-            color: $color-base;
+            color: $color-title;
             border-radius: 1px;
             outline: none;
+            transition: $transition-duration-base;
 
             &.placeholder { color:#899aa4; }
             &:-moz-placeholder { color:#899aa4; }
             &::-moz-placeholder { color:#899aa4; }
             &:-ms-input-placeholder { color:#899aa4; }
             &::-webkit-input-placeholder { color:#899aa4; }
+
+            &:focus {
+                border-color: $color-base;
+            }
         }
 
         textarea {
             height: 15rem;
         }
     }
+
+    &__input-block.is-error {
+
+        input, textarea {
+            border-color: red;
+        }
+    }
+
+    &__button-block {
+
+        @include mq(md) {
+            display: flex;
+            align-items: stretch;
+        }
+
+
+        .error-message {
+            @include text-base();
+            flex: 1;
+            display: none;
+            align-items: center;
+            padding: 0 2rem;
+            color: red;
+        }
+        .error-message.is-active {
+            @include mq(md) {
+                display: flex;
+            }
+        }
+    }
+
+
 }
