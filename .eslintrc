@@ -1,0 +1,14 @@
+// TODO: .eslintrc rules
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {
+    "jQuery": false,
+    "$": true
+  }
+}

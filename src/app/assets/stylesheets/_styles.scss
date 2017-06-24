@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    @include text-base;
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+    color: $color-base;
+
+    @if $enable-sticky-footer == true {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// Links
+a {
+    transition: all $transition-duration-base;
+    text-decoration: none;
+
+    &.is-current {
+        cursor: default;
+
+        &:visited,
+        &:hover,
+        &:active {
+            color: inherit;
+        }
+    }
+}
+
+// Forms
+button,
+input,
+select,
+textarea {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+select {
+    appearance: none;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+// Headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-text;
+}
+
+
+
+h1 {
+    @include h1;
+}
+
+h2 {
+    @include h2;
+}
+
+h3 {
+    @include h3;
+}
+
+h4 {
+    @include h4;
+}
+
+h5 {
+    @include h5;
+}
+
+h6 {
+    @include h6;
+}
+
+// Images
+img {
+    max-width: 100%;
+
+    &[width],
+    &[height] {
+        max-width: none;
+    }
+}
+
+// Lists
+ol,
+ul {
+    list-style: none;
+}
+
+// Small
+small {
+    @include text-small;
+}
+
+// Tables
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:disabled {
+    cursor: not-allowed;
+}

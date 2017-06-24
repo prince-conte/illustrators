@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=cyrillic-ext');
+
+// Responsive
+$mq-breakpoints: ( // for example: xs, sm, md, lg, xl
+    'xs': 767px,
+    'md': 768px
+);
+
+$mq-container-widths: (
+    'xs': 100%,
+    'md': 1360px
+);
+
+$mq-container-indents: (
+    'xs': 1rem,
+    'md': 2rem
+);
+
+$mq-grid-gutters: (
+    'xs': 1rem,
+    'md': 2rem
+);
+
+// Not responsive
+$container-width:  1360px;
+$container-indent: 2rem;
+
+$grid-gutter: 2rem;
+
+// Border radius
+$border-radius-base: .4rem;
+
+// Colors
+$color-base:          #899aa4;
+$color-base-light:    rgba($color-base, .8);
+$color-base-lighter:  rgba($color-base, .6);
+$color-base-lightest: rgba($color-base, .4);
+
+$color-inverse:       #f7f7f7;
+
+$color-brand:         #009ee0;
+$color-brand-hover:         #33b1e6;
+$color-title:         #0e1820;
+
+$color-error:         red;
+$color-warning:       orange;
+$color-success:       green;
+
+// Fonts
+$font-family-text:  'Noto Sans', sans-serif;
+$font-family-title: 'Noto Sans', sans-serif;
+
+// Forms
+$checkbox-size:    2rem;
+$radiobutton-size: 2rem;
+
+// Headings
+$heading-font-weight-base: 700;
+
+// Transitions
+$transition-duration-base: .2s;
