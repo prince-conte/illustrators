@@ -12,7 +12,8 @@
       "modernizr": "src/app/assets/javascripts/vendor/modernizr.js",
       "vendorScripts": [
         "src/app/assets/vendor/jquery/dist/jquery.js",
-        "src/app/assets/vendor/svg4everybody/dist/svg4everybody.js"
+        "src/app/assets/vendor/svg4everybody/dist/svg4everybody.js",
+        "src/app/assets/vendor/wow/dist/wow.js"
       ],
       "scripts": {
         "build": [

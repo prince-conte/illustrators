@@ -1,5 +1,6 @@
 @import "../vendor/normalize-css/normalize";
 @import "../vendor/mdi/css/materialdesignicons";
+@import "../vendor/animate.css/animate";
 
 @import "config";
 @import "functions";
@@ -29,3 +30,4 @@
 @import "components/statistics";
 @import "components/about";
 @import "components/contacts";
+@import "components/image_animate";
