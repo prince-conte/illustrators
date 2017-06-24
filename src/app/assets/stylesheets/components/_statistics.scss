@@ -1,0 +1,85 @@
+.information-content {
+    background: $color-inverse;
+
+    &__box {
+        padding: 3rem 0;
+
+        @include mq(md) {
+            padding: 11rem 0 12rem;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    &__item {
+        flex: 2;
+        flex-grow: 1;
+        padding: 1rem;
+        text-align: center;
+
+        @include mq(md) {
+            padding: 2rem;
+        }
+    }
+
+    &__item-value {
+        margin-bottom: .8rem;
+        text-transform: uppercase;
+        color: $color-brand;
+
+        @include mq(md) {
+            @include font(7rem,7rem);
+        }
+    }
+
+    &__item-title {
+        @include text-base;
+    }
+
+
+    &__image-block {
+        margin-bottom: 2rem;
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+
+        &--photo {
+            > img {
+                width: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__description {
+        text-align: center;
+        color: $color-title;
+
+        > h5 {
+            text-align: center;
+        }
+
+        > p {
+            @include text-base();
+            color: $color-base;
+        }
+    }
+
+    &__title-block {
+        margin-bottom: 1rem;
+    }
+
+    &__company {
+        color: $color-brand;
+    }
+
+
+
+}

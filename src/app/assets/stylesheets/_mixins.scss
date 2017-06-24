@@ -222,18 +222,15 @@
 
 @mixin h4($font-weight: $heading-font-weight-base) {
     @include heading;
-    @include font(3.4rem, 45rem);
-    font-weight: 400;
+    @include font(3.4rem, 4.5rem);
 
     @include mq(md) {
-        @include font(3.4rem, 45rem);
+        @include font(3.4rem, 5rem);
     }
 }
 
 @mixin h5($font-weight: $heading-font-weight-base) {
-    @include heading;
-    @include text-large;
-    font-weight: $font-weight;
+    @include font(1.8rem,2.5rem);
 }
 
 @mixin h6($font-weight: $heading-font-weight-base) {

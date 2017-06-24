@@ -1,0 +1,26 @@
+.contacts {
+    background: #fff;
+
+    &__box {
+        padding: 3rem 0;
+
+        @include mq(md) {
+            padding: 11rem 0 12rem;
+        }
+    }
+
+    &__grid {
+        @include mq(md) {
+            @include grid(x, center, center);
+        }
+    }
+
+    &__item {
+        @include mq(md) {
+            @include grid-col;
+            @include col-size(1/2);
+        }
+    }
+
+
+}

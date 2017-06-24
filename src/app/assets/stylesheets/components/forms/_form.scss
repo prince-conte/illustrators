@@ -1,0 +1,37 @@
+.form {
+
+    &__input-block {
+
+        &:not(:last-child) {
+                margin-bottom: 1rem;
+        }
+
+        @include mq(md) {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+
+        input, textarea {
+            @include font(1.8rem,1.8rem);
+            display: block;
+            width: 100%;
+            padding: 1.7rem 1.7rem 1.6rem;
+            border: 1px solid #e6e6e6;
+            color: $color-base;
+            border-radius: 1px;
+            outline: none;
+
+            &.placeholder { color:#899aa4; }
+            &:-moz-placeholder { color:#899aa4; }
+            &::-moz-placeholder { color:#899aa4; }
+            &:-ms-input-placeholder { color:#899aa4; }
+            &::-webkit-input-placeholder { color:#899aa4; }
+        }
+
+        textarea {
+            height: 15rem;
+        }
+    }
+}

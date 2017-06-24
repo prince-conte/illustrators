@@ -15,7 +15,6 @@ html {
 
 body {
     @include text-base;
-    position: relative;
     min-height: 100vh;
     background: #fff;
     color: $color-base;
@@ -135,4 +134,9 @@ table {
 
 :disabled {
     cursor: not-allowed;
+}
+
+.hideme
+{
+    opacity:0;
 }
