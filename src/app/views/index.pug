@@ -26,10 +26,10 @@ block main
 
     section.section-box.about
             .about__grid
-                .about__item.js-full-section(data-background="brand")
+                .about__item.js-full-section.about__item--image(data-background="brand")
                     .image-animate
                         .image-animate__fr1.animated.zoomInLeft.wow
-                            img(src='img/fr1.svg')
+                            img(src='img/rocketman-01.svg')
 
                 .about__item.js-full-section
                     article.about__item-content.hideme
@@ -54,7 +54,7 @@ block main
                         h5.about__item-sub-title Юридическое и коммерческое сопровождение
                         p Подготовим авторские договора для исключения юридических рисков и проблем.
 
-                .about__item.js-full-section(data-background="brand-alt")
+                .about__item.about__item--image.js-full-section(data-background="brand-alt")
                     .image-animate
                         .image-animate__fr2.animated.bounceInRight.wow
                             img(src='img/barman-01.svg')
@@ -104,8 +104,10 @@ block main
 
     section.section-box.about
             .about__grid
-                .about__item.js-full-section(data-background="brand")
-
+                .about__item.about__item--image.js-full-section(data-background="brand")
+                    .image-animate
+                        .image-animate__fr3.animated.flipInX.wow
+                            img(src='img/shivaman-01.svg' alt='')
 
                 .about__item.js-full-section
                     article.about__item-content.hideme
@@ -136,8 +138,10 @@ block main
                         p Конкурсы — нетривиальный способ разбудить в людях творческие навыки, или привлечь новую аудиторию к вашему бренду. Мы готовы придумать для вас идею конкурса и с успехом его провести.
 
 
-                .about__item.js-full-section(data-background="brand-alt")
-
+                .about__item.about__item--image.js-full-section(data-background="brand-alt")
+                    .image-animate
+                        .image-animate__fr4.animated.flipInX.wow
+                            img(src='img/rozetka-01.svg' alt='')
 
     .section-box.information-content
         .container
@@ -146,7 +150,7 @@ block main
                 h2.section-box__title Отзывы наших клиентов
                 .information-content__grid
 
-                    .information-content__item.bounceInLeft.wow
+                    .information-content__item.flipInX.wow
                         .information-content__image-block.information-content__image-block--photo
                             img(src='img/ph1.png' alt='')
 
@@ -157,7 +161,7 @@ block main
                             p Качественные проекты невозможно создать в одиночку или с помощью людей, которые впервые сталкиваются с решением нетривиальных задач.
 
 
-                    .information-content__item.bounceInUp.wow
+                    .information-content__item.flipInX.wow
                         .information-content__image-block.information-content__image-block--photo
                             img(src='img/ph2.png' alt='')
 
@@ -170,7 +174,7 @@ block main
 
 
 
-                    .information-content__item.bounceInRight.wow
+                    .information-content__item.flipInX.wow
                         .information-content__image-block.information-content__image-block--photo
                             img(src='img/ph3.png' alt='')
 
@@ -181,7 +185,7 @@ block main
                             p Заключая договор с нами, вы экономите время, а как известно совокупность качественной работы, сделанной вовремя экономит деньги.
 
 
-    .section-box.contacts
+    .section-box.contacts#contacts
         .container
             .contacts__box
                 h2.section-box__title

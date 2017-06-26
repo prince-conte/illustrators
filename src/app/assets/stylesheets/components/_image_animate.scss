@@ -4,32 +4,112 @@
     top: 0;
     left: 0;
 
-    img {
+    @include mq(xs) {
+        position: relative;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+    }
+
+
+        img {
+        width: auto;
+        height: auto;
         vertical-align: top;
+
+
     }
 
     &__fr1 {
         position: absolute;
         bottom: -.4rem;
         right: -4rem;
-        height: 80%;
 
-        > img {
-            height: 100%;
-            width: auto;
+
+        img {
+            @include mq(xs) {
+                position: relative;
+                padding: 2rem;
+                top: auto;
+                left: auto;
+                bottom: auto;
+                right: auto;
+            }
         }
+
     }
+
+
     &__fr2 {
         position: absolute;
-        bottom: -4.6rem;
+        bottom: -.1rem;
         left: 10rem;
-        height: 80%;
+    }
 
-        > img {
-            height: 100%;
-            width: auto;
+
+    &__fr3 {
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+
+            @include mq(xs) {
+                position: relative;
+                padding: 2rem;
+                padding-right: 0;
+                transform: translate(-50%,0);
+            }
+
+
         }
     }
+
+
+    &__fr4 {
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+
+            @include mq(xs) {
+                position: relative;
+                padding: 2rem;
+                padding-right: 0;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &__fr1,
+    &__fr2,
+    &__fr3,
+    &__fr4 {
+        @include mq(xs) {
+            position: relative;
+            top: auto;
+            left: auto;
+            bottom: auto;
+            right: auto;
+
+        }
+    }
+
+
+
 }
 
 
@@ -37,6 +117,7 @@
 
 .wow {
     visibility: hidden;
+    animation-delay: .4s;
 }
 
 

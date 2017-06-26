@@ -11,6 +11,8 @@
 html {
     height: 100%;
     font-size: 62.5%;
+    overflow: hidden;
+    background-color: #111c24;
 }
 
 body {
@@ -18,11 +20,17 @@ body {
     min-height: 100vh;
     background: #fff;
     color: $color-base;
+    opacity: 0;
+    transition: .8s;
 
     @if $enable-sticky-footer == true {
         display: flex;
         flex-direction: column;
     }
+}
+
+.fadeIn {
+    opacity: 1;
 }
 
 // Links

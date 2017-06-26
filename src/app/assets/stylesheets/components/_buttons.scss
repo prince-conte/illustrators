@@ -1,4 +1,6 @@
 .button-to-order {
+    @include interact(color,#fff);
+    @include interact(background,$color-brand);
     @include font(1.8rem,1.8rem);
     padding: 2.2rem 2.2rem 2rem;
     min-width: 20rem;

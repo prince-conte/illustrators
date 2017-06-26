@@ -6,19 +6,25 @@
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: #111c24;
 
 
     &__background-box {
         position: absolute;
-        top: 0;
+        top: -20%;
         left: 0;
         width: 100%;
         height: 100%;
+        background-position: 50% 180%;
         background-color: #111c24;
-        background-position: 50% 70%;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url(../img/titleman-01.svg);
+
+        @include mq(md) {
+            top: 0;
+            background-position: 50% 70%;
+        }
     }
 
 
@@ -62,6 +68,8 @@
 
     &__image {
         opacity: 0;
+        width: 42%;
+
         @include mq(md) {
             width: 52%;
             margin: 0 auto 3.5rem;

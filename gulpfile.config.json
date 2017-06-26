@@ -25,6 +25,7 @@
           "src/app/assets/javascripts/components/site_main.babel.js",
           "src/app/assets/javascripts/components/animation_element.babel.js",
           "src/app/assets/javascripts/components/section_height.babel.js",
+          "src/app/assets/javascripts/components/scroll_to_bottom.js",
           "src/app/assets/javascripts/vendor/jquery.smoothscroll.js"
         ],
         "watch": "src/app/assets/javascripts/**/*.js"
